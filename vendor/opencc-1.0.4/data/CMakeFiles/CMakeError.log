@@ -1,0 +1,12 @@
+Determining if the CXX compiler works failed with the following output:
+Change Dir: F:/henry_jia/workspace_php/localhost_practice/vendor/opencc-1.0.4/data/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/ProgramData/chocolatey/bin/make.exe" "cmTC_17044/fast"
+C:/ProgramData/chocolatey/lib/make/tools/bin/make -f CMakeFiles/cmTC_17044.dir/build.make CMakeFiles/cmTC_17044.dir/build
+make[1]: Entering directory `F:/henry_jia/workspace_php/localhost_practice/vendor/opencc-1.0.4/data/CMakeFiles/CMakeTmp'
+Syntax error: Unterminated quoted string
+make[1]: *** [CMakeFiles/cmTC_17044.dir/testCXXCompiler.cxx.obj] ´íÎó 2
+make[1]: Leaving directory `F:/henry_jia/workspace_php/localhost_practice/vendor/opencc-1.0.4/data/CMakeFiles/CMakeTmp'
+make: *** [cmTC_17044/fast] ´íÎó 2
+
+
