@@ -2,24 +2,11 @@
 namespace frontend\controllers;
 
 use Yii;
-<<<<<<< HEAD
 use yii\web\Controller;
 
 
 use vendor\geetest\web\StartCaptchaServlet;
 use vendor\geetest\web\VerifyLoginServlet;
-=======
-use yii\base\InvalidParamException;
-use yii\web\BadRequestHttpException;
-use yii\web\Controller;
-use yii\filters\VerbFilter;
-use yii\filters\AccessControl;
-use common\models\LoginForm;
-use frontend\models\PasswordResetRequestForm;
-use frontend\models\ResetPasswordForm;
-use frontend\models\SignupForm;
-use frontend\models\ContactForm;
->>>>>>> 81b309045df63628e92ac65d99bb5e36897e0e9f
 
 /**
  * test opencc controller
@@ -27,7 +14,6 @@ use frontend\models\ContactForm;
 class TestOpenccController extends Controller
 {
 	public function actionIndex(){
-<<<<<<< HEAD
 		return $this->render('index');
 	}
 	public function actionStartCaptchaServlet(){
@@ -49,8 +35,5 @@ class TestOpenccController extends Controller
 		$start = new VerifyLoginServlet;
 		$result = $start->index($params);
 		return $result;
-=======
-
->>>>>>> 81b309045df63628e92ac65d99bb5e36897e0e9f
 	}
 }
