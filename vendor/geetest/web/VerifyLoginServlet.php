@@ -1,5 +1,8 @@
 <?php 
 namespace  vendor\geetest\web;
+
+use vendor\geetest\lib\GeetestLib;
+
 /**
  * 输出二次验证结果,本文件示例只是简单的输出 Yes or No
  */
@@ -30,7 +33,7 @@ namespace  vendor\geetest\web;
 // }
 class VerifyLoginServlet{
 	public function index($params){
-		require_once dirname(dirname(__FILE__)) . '/lib/class.geetestlib.php';
+//		require_once dirname(dirname(__FILE__)) . '/lib/class.geetestlib.php';
 		require_once dirname(dirname(__FILE__)) . '/config/config.php';
 		session_start();
 		if($params['type'] == 'pc'){

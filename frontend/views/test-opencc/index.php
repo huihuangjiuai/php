@@ -1,6 +1,7 @@
 <?php 
 use yii\helpers\Html;
 use union\assets\AppAsset;
+use yii\helpers\Url;
 
 $this->registerCss("
 		        body {
@@ -103,7 +104,8 @@ $this->registerJsFile("/js/tools/gt.js");
         captchaObj.onSuccess(function () {
             var validate = captchaObj.getValidate();
             $.ajax({
-                url: "http://frontend.localhost.com/index.php?r=test-opencc/verify-login-servlet", // 进行二次验证
+                url: <?= Url::to(['test-opencc/verify-login-servlet'])?>,
+                //url: "http://frontend.localhost.com/index.php?r=test-opencc/verify-login-servlet", // 进行二次验证
                 type: "post",
                 dataType: "json",
                 data: {
@@ -152,7 +154,7 @@ $this->registerJsFile("/js/tools/gt.js");
 <br><br>
 <hr>
 <br><br>
-<form class="popup" action="http://frontend.localhost.com/index.php?r=test-opencc/verify-login-servlet" method="post">
+<form class="popup" action="<?= Url::to(['test-opencc/verify-login-servlet'])?>" method="post">
     <h2>嵌入式Demo，使用表单形式提交二次验证所需的验证结果值</h2>
         <input class="inp" name="type" type="hidden" value="pc">
     <br>
@@ -201,7 +203,7 @@ $this->registerJsFile("/js/tools/gt.js");
         success: function (data) {
             // 使用initGeetest接口
             // 参数1：配置参数
-            
+
             // 参数2：回调，回调的第一个参数验证码对象，之后可以使用它做appendTo之类的事件
             initGeetest({
                 gt: data.gt,
