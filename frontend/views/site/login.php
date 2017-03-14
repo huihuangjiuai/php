@@ -31,7 +31,7 @@ $this->registerJs('
     };
     $.ajax({
         // 获取id，challenge，success（是否启用failback）
-        url: "http://frontend.localhost.com/index.php?r=test-opencc/start-captcha-servlet&type=pc&t=" + (new Date()).getTime(), // 加随机数防止缓存
+        url: "http://frontend.virtual.com/index.php?r=test-opencc/start-captcha-servlet&type=pc&t=" + (new Date()).getTime(), // 加随机数防止缓存
         type: "get",
         dataType: "json",
         success: function (data) {
@@ -49,10 +49,11 @@ $this->registerJs('
         }
     });
 ');
-$this->registerJsFile("/js/tools/gt.js");
+#$this->registerJsFile("/js/tools/gt.js");
 ?>
 <div class="site-login">
     <h1><?= Html::encode($this->title) ?></h1>
+    <script src="http://static.geetest.com/static/tools/gt.js"></script>
 
     <p>Please fill out the following fields to login:</p>
 
