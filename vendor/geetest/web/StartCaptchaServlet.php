@@ -30,7 +30,7 @@ class StartCaptchaServlet{
 			$GtSdk = new GeetestLib(MOBILE_CAPTCHA_ID, MOBILE_PRIVATE_KEY);
 		}
 		session_start();
-		$user_id = "81405982@qq.com";
+		$user_id = "test";
 		$status = $GtSdk->pre_process($user_id);
 		$_SESSION['gtserver'] = $status;
 		$_SESSION['user_id'] = $user_id;
