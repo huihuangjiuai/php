@@ -19,7 +19,8 @@
         "yiisoft/yii2-bootstrap": "*",
         "yiisoft/yii2-swiftmailer": "*",
         "kartik-v/yii2-tree-manager": "@dev",
-        "kartik-v/yii2-date-range": "*"
+        "kartik-v/yii2-date-range": "*",
+        "dektrium/yii2-user": "^0.9.12"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",
